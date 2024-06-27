@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adv-cc 01", "Adv-cc 01\Adv-cc 01.csproj", "{3259468A-B98F-4692-B3B9-CA8DBD944141}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "console-based", "console-based\console-based.csproj", "{BE3193E0-704E-4AD1-AE3E-46717473F10C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find Duplicates in Array", "Find Duplicates in Array\Find Duplicates in Array.csproj", "{F6676053-12EE-44BE-A95A-B545E26757CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{3259468A-B98F-4692-B3B9-CA8DBD944141}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3259468A-B98F-4692-B3B9-CA8DBD944141}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3259468A-B98F-4692-B3B9-CA8DBD944141}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3193E0-704E-4AD1-AE3E-46717473F10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3193E0-704E-4AD1-AE3E-46717473F10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3193E0-704E-4AD1-AE3E-46717473F10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3193E0-704E-4AD1-AE3E-46717473F10C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6676053-12EE-44BE-A95A-B545E26757CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6676053-12EE-44BE-A95A-B545E26757CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6676053-12EE-44BE-A95A-B545E26757CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6676053-12EE-44BE-A95A-B545E26757CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
