@@ -7,7 +7,7 @@ namespace Reverse_Words.Tests
     public class ReverseWordsTests
     {
         [Fact]
-        public void Test_ReverseWords_Case1()
+        public void Test_ReverseWords_Case011()
         {
             string input = "csharp is programming language";
             string expected = "language programming is csharp";
@@ -16,7 +16,7 @@ namespace Reverse_Words.Tests
         }
 
         [Fact]
-        public void Test_ReverseWords_Case2()
+        public void Test_ReverseWords_Case02()
         {
             string input = "Reverse the words in this sentence";
             string expected = "sentence this in words the Reverse";
@@ -25,7 +25,7 @@ namespace Reverse_Words.Tests
         }
 
         [Fact]
-        public void Test_ReverseWords_Case3()
+        public void Test_ReverseWords_Case03()
         {
             string input = "challenges and data structures";
             string expected = "structures data and challenges";
