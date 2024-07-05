@@ -9,9 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "console-based", "console-ba
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Find Duplicates in Array", "Find Duplicates in Array\Find Duplicates in Array.csproj", "{F6676053-12EE-44BE-A95A-B545E26757CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonElementsFinder", "CommonElementsFinder\CommonElementsFinder.csproj", "{5D11837B-5D29-40A6-9F36-130A78227903}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonElementsFinder", "CommonElementsFinder\CommonElementsFinder.csproj", "{5D11837B-5D29-40A6-9F36-130A78227903}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{8DDAF453-3274-4521-9DC0-6C1C8DDECE6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject", "TestProject\TestProject.csproj", "{8DDAF453-3274-4521-9DC0-6C1C8DDECE6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse-Words", "Reverse-Words\Reverse-Words.csproj", "{D17886EA-6D83-43D1-84E8-2D455537B2C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8DDAF453-3274-4521-9DC0-6C1C8DDECE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DDAF453-3274-4521-9DC0-6C1C8DDECE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DDAF453-3274-4521-9DC0-6C1C8DDECE6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D17886EA-6D83-43D1-84E8-2D455537B2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17886EA-6D83-43D1-84E8-2D455537B2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17886EA-6D83-43D1-84E8-2D455537B2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17886EA-6D83-43D1-84E8-2D455537B2C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
