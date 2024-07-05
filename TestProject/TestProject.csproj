@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CommonElementsFinder\CommonElementsFinder.csproj" />
+    <ProjectReference Include="..\Reverse-Words\Reverse-Words.csproj" />
   </ItemGroup>
 
 </Project>
