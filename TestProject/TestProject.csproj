@@ -23,7 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Adv-cc 01\Adv-cc 01.csproj" />
     <ProjectReference Include="..\CommonElementsFinder\CommonElementsFinder.csproj" />
+    <ProjectReference Include="..\LinkedList-1\LinkedList-1.csproj" />
     <ProjectReference Include="..\Reverse-Words\Reverse-Words.csproj" />
   </ItemGroup>
 
