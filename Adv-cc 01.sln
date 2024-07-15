@@ -19,7 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Structures", "Data Str
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinkedList", "LinkedList", "{0F3AE2AD-DF44-4E79-B098-4F474971A9E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList-1", "LinkedList-1\LinkedList-1.csproj", "{10C3DA79-8A1B-4C61-A198-F0E4B6835DEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList-1", "LinkedList-1\LinkedList-1.csproj", "{10C3DA79-8A1B-4C61-A198-F0E4B6835DEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linked-List-Remove-Duplicates", "Linked-List-Remove-Duplicates\Linked-List-Remove-Duplicates.csproj", "{4E19974F-CEFC-44FF-97DA-C1F03358B2E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{10C3DA79-8A1B-4C61-A198-F0E4B6835DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10C3DA79-8A1B-4C61-A198-F0E4B6835DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10C3DA79-8A1B-4C61-A198-F0E4B6835DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E19974F-CEFC-44FF-97DA-C1F03358B2E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E19974F-CEFC-44FF-97DA-C1F03358B2E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E19974F-CEFC-44FF-97DA-C1F03358B2E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E19974F-CEFC-44FF-97DA-C1F03358B2E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0F3AE2AD-DF44-4E79-B098-4F474971A9E7} = {2E96D84D-C58C-4701-9F52-0B27E4A08AD5}
 		{10C3DA79-8A1B-4C61-A198-F0E4B6835DEC} = {0F3AE2AD-DF44-4E79-B098-4F474971A9E7}
+		{4E19974F-CEFC-44FF-97DA-C1F03358B2E5} = {0F3AE2AD-DF44-4E79-B098-4F474971A9E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE92085D-18CE-4066-953E-7DB873171F33}
