@@ -27,6 +27,7 @@
     <ProjectReference Include="..\CommonElementsFinder\CommonElementsFinder.csproj" />
     <ProjectReference Include="..\Linked-List-Remove-Duplicates\Linked-List-Remove-Duplicates.csproj" />
     <ProjectReference Include="..\LinkedList-1\LinkedList-1.csproj" />
+    <ProjectReference Include="..\LinkedListImplementation\LinkedListImplementation.csproj" />
     <ProjectReference Include="..\Reverse-Words\Reverse-Words.csproj" />
   </ItemGroup>
 
