@@ -29,6 +29,7 @@
     <ProjectReference Include="..\LinkedList-1\LinkedList-1.csproj" />
     <ProjectReference Include="..\LinkedListImplementation\LinkedListImplementation.csproj" />
     <ProjectReference Include="..\Reverse-Words\Reverse-Words.csproj" />
+    <ProjectReference Include="..\StackAndQueue\StackAndQueue.csproj" />
   </ItemGroup>
 
 </Project>
