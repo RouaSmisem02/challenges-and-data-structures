@@ -19,15 +19,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Structures", "Data Str
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinkedList", "LinkedList", "{0F3AE2AD-DF44-4E79-B098-4F474971A9E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList-1", "LinkedList-1\LinkedList-1.csproj", "{10C3DA79-8A1B-4C61-A198-F0E4B6835DEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList-1", "LinkedList-1\LinkedList-1.csproj", "{10C3DA79-8A1B-4C61-A198-F0E4B6835DEC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linked-List-Remove-Duplicates", "Linked-List-Remove-Duplicates\Linked-List-Remove-Duplicates.csproj", "{4E19974F-CEFC-44FF-97DA-C1F03358B2E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListImplementation", "LinkedListImplementation\LinkedListImplementation.csproj", "{569C4EAE-BF0A-4802-BCE5-946BD89722B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedListImplementation", "LinkedListImplementation\LinkedListImplementation.csproj", "{569C4EAE-BF0A-4802-BCE5-946BD89722B8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stack & Queue", "Stack & Queue", "{48B3921C-D38D-41D8-ADC5-BC70A44A1DAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAndQueue", "StackAndQueue\StackAndQueue.csproj", "{9ADF0194-1373-4BDB-9C4F-86C6A960DCBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueue", "StackAndQueue\StackAndQueue.csproj", "{9ADF0194-1373-4BDB-9C4F-86C6A960DCBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReverseStackUsingQueue", "ReverseStackUsingQueue", "{99E8DA71-5250-4664-BE0C-1633CB4D21E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseStackUsingQueue", "ReverseStackUsingQueue\ReverseStackUsingQueue.csproj", "{184B42F0-D86C-4EE7-A2E1-1B9EFFE25602}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,10 @@ Global
 		{9ADF0194-1373-4BDB-9C4F-86C6A960DCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ADF0194-1373-4BDB-9C4F-86C6A960DCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ADF0194-1373-4BDB-9C4F-86C6A960DCBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184B42F0-D86C-4EE7-A2E1-1B9EFFE25602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184B42F0-D86C-4EE7-A2E1-1B9EFFE25602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184B42F0-D86C-4EE7-A2E1-1B9EFFE25602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184B42F0-D86C-4EE7-A2E1-1B9EFFE25602}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +94,8 @@ Global
 		{569C4EAE-BF0A-4802-BCE5-946BD89722B8} = {0F3AE2AD-DF44-4E79-B098-4F474971A9E7}
 		{48B3921C-D38D-41D8-ADC5-BC70A44A1DAC} = {2E96D84D-C58C-4701-9F52-0B27E4A08AD5}
 		{9ADF0194-1373-4BDB-9C4F-86C6A960DCBE} = {48B3921C-D38D-41D8-ADC5-BC70A44A1DAC}
+		{99E8DA71-5250-4664-BE0C-1633CB4D21E9} = {48B3921C-D38D-41D8-ADC5-BC70A44A1DAC}
+		{184B42F0-D86C-4EE7-A2E1-1B9EFFE25602} = {99E8DA71-5250-4664-BE0C-1633CB4D21E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE92085D-18CE-4066-953E-7DB873171F33}
