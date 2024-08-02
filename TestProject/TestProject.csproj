@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -29,6 +29,7 @@
     <ProjectReference Include="..\LinkedList-1\LinkedList-1.csproj" />
     <ProjectReference Include="..\LinkedListImplementation\LinkedListImplementation.csproj" />
     <ProjectReference Include="..\Reverse-Words\Reverse-Words.csproj" />
+    <ProjectReference Include="..\ReverseStackUsingQueue\ReverseStackUsingQueue.csproj" />
     <ProjectReference Include="..\StackAndQueue\StackAndQueue.csproj" />
   </ItemGroup>
 
