@@ -25,6 +25,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Adv-cc 01\Adv-cc 01.csproj" />
     <ProjectReference Include="..\CommonElementsFinder\CommonElementsFinder.csproj" />
+    <ProjectReference Include="..\DeleteMiddleElement\DeleteMiddleElement.csproj" />
+    <ProjectReference Include="..\Find Duplicates in Array\Find Duplicates in Array.csproj" />
     <ProjectReference Include="..\Linked-List-Remove-Duplicates\Linked-List-Remove-Duplicates.csproj" />
     <ProjectReference Include="..\LinkedList-1\LinkedList-1.csproj" />
     <ProjectReference Include="..\LinkedListImplementation\LinkedListImplementation.csproj" />
