@@ -1,0 +1,30 @@
+## Min Stack Challenge
+
+### Problem Domain
+Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+### Inputs and Outputs
+- Inputs: Series of stack operations.
+- Outputs: Results of stack operations, focusing on the minimum value.
+
+### Edge Cases
+- Operations on an empty stack.
+- Multiple elements with the same minimum value.
+
+### Algorithm
+- Utilize two stacks: one for regular elements and another for minimum values.
+- Ensure operations like Push, Pop, and GetMin maintain constant time complexity.
+
+### Real Code
+Here's the C# implementation of the MinStack class:
+
+```csharp
+// Insert your MinStack.cs code here
+
+### Big O Time/Space Complexity
+```
+Push: O(1)
+Pop: O(1)
+Top: O(1)
+GetMin: O(1)
+```

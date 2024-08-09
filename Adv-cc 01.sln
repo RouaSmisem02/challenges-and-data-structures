@@ -35,7 +35,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseStackUsingQueue", "R
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeleteMiddleElemen", "DeleteMiddleElemen", "{590A6244-61E7-46D5-A711-3E484E149622}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteMiddleElement", "DeleteMiddleElement\DeleteMiddleElement.csproj", "{E85D316B-0B43-49D9-B8D8-A5A3171DD390}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeleteMiddleElement", "DeleteMiddleElement\DeleteMiddleElement.csproj", "{E85D316B-0B43-49D9-B8D8-A5A3171DD390}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MinStack", "MinStack", "{41FA5D46-CF96-407C-A735-5121375CA2A5}"
+	ProjectSection(SolutionItems) = preProject
+		READMEmd = READMEmd
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinStack", "MinStack\MinStack.csproj", "{951834DB-49EE-4896-ABE5-BDA887BFF26A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +98,10 @@ Global
 		{E85D316B-0B43-49D9-B8D8-A5A3171DD390}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E85D316B-0B43-49D9-B8D8-A5A3171DD390}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E85D316B-0B43-49D9-B8D8-A5A3171DD390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{951834DB-49EE-4896-ABE5-BDA887BFF26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{951834DB-49EE-4896-ABE5-BDA887BFF26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{951834DB-49EE-4896-ABE5-BDA887BFF26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{951834DB-49EE-4896-ABE5-BDA887BFF26A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +117,8 @@ Global
 		{184B42F0-D86C-4EE7-A2E1-1B9EFFE25602} = {99E8DA71-5250-4664-BE0C-1633CB4D21E9}
 		{590A6244-61E7-46D5-A711-3E484E149622} = {48B3921C-D38D-41D8-ADC5-BC70A44A1DAC}
 		{E85D316B-0B43-49D9-B8D8-A5A3171DD390} = {590A6244-61E7-46D5-A711-3E484E149622}
+		{41FA5D46-CF96-407C-A735-5121375CA2A5} = {48B3921C-D38D-41D8-ADC5-BC70A44A1DAC}
+		{951834DB-49EE-4896-ABE5-BDA887BFF26A} = {41FA5D46-CF96-407C-A735-5121375CA2A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE92085D-18CE-4066-953E-7DB873171F33}
