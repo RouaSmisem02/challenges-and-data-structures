@@ -6,30 +6,26 @@
         {
             BinarySearchTree bst = new BinarySearchTree();
 
-            bst.Add(10);
-            bst.Add(5);
-            bst.Add(15);
+            bst.Add(4);
+            bst.Add(8);
             bst.Add(7);
+            bst.Add(12);
+            bst.Add(9);
 
-            Console.WriteLine("PreOrder Traversal:");
-            bst.PreOrder(bst.Root);
+            Console.WriteLine("Original InOrder Traversal:");
+            bst.InOrder(bst.Root); // This calls the InOrder method from BinaryTree
             Console.WriteLine();
 
-            Console.WriteLine("InOrder Traversal:");
+            bst.Print(bst.Root);
+            Console.WriteLine();
+
+            bst.Mirror();
+
+            Console.WriteLine("Mirrored InOrder Traversal:");
             bst.InOrder(bst.Root);
             Console.WriteLine();
 
-            Console.WriteLine("PostOrder Traversal:");
-            bst.PostOrder(bst.Root);
-            Console.WriteLine();
-
-            Console.WriteLine("Tree Structure:");
             bst.Print(bst.Root);
-
-            Console.WriteLine($"Contains 7: {bst.Contains(7)}");
-            bst.Remove(5);
-            Console.WriteLine($"Contains 5 after removal: {bst.Contains(5)}");
         }
     }
-
 }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TreeImplementation
 {
@@ -15,15 +11,23 @@ namespace TreeImplementation
             Root = null;
         }
 
-        public void PreOrder(Node node)
+        // Existing methods...
+
+        public void MirrorTree(Node node)
         {
             if (node == null) return;
 
-            Console.Write($"{node.Data} ");
-            PreOrder(node.Left);
-            PreOrder(node.Right);
+            // Swap the left and right children
+            Node temp = node.Left;
+            node.Left = node.Right;
+            node.Right = temp;
+
+            // Recursively mirror the left and right subtrees
+            MirrorTree(node.Left);
+            MirrorTree(node.Right);
         }
 
+        // Add a method to call MirrorTree from the root
         public void InOrder(Node node)
         {
             if (node == null) return;
@@ -31,15 +35,6 @@ namespace TreeImplementation
             InOrder(node.Left);
             Console.Write($"{node.Data} ");
             InOrder(node.Right);
-        }
-
-        public void PostOrder(Node node)
-        {
-            if (node == null) return;
-
-            PostOrder(node.Left);
-            PostOrder(node.Right);
-            Console.Write($"{node.Data} ");
         }
 
         public void Print(Node node, string indent = "", bool last = true)
@@ -64,6 +59,10 @@ namespace TreeImplementation
                 Print(node.Right, indent, true);
             }
         }
-    }
 
+        public void Mirror()
+        {
+            MirrorTree(Root);
+        }
+    }
 }
