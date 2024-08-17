@@ -28,3 +28,22 @@ Pop: O(1)
 Top: O(1)
 GetMin: O(1)
 ```
+# Mirror Tree Challenge
+### Problem Domain
+Convert a binary tree into its mirror tree, where all left and right children are swapped.
+
+### Inputs and Expected Outputs
+Inputs: A binary tree.
+Outputs: The mirrored binary tree.
+Edge Cases
+Single-node tree.
+Empty tree.
+Visual
+
+### Algorithm
+MirrorTree(): Traverse the binary tree recursively and swap the left and right subtrees.
+InorderTraversal(): Perform an inorder traversal to return a list of nodes in the sequence.
+
+### Big O Time/Space Complexity
+Mirror: O(n) where n is the number of nodes in the tree.
+InorderTraversal: O(n) where n is the number of nodes in the tree.
