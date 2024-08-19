@@ -1,85 +1,101 @@
-# Binary Tree and Binary Search Tree Implementation
+## Min Stack Challenge
 
-## Problem Domain
+### Problem Domain
+Implement a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
-In this challenge, we are required to implement two fundamental data structures: Binary Tree and Binary Search Tree (BST). These data structures are essential for various computer science applications, including searching, sorting, and hierarchical data storage.
+### Inputs and Outputs
+- Inputs: Series of stack operations.
+- Outputs: Results of stack operations, focusing on the minimum value.
 
-### Binary Tree
+### Edge Cases
+- Operations on an empty stack.
+- Multiple elements with the same minimum value.
 
-A Binary Tree is a tree data structure where each node has at most two children, referred to as the left child and the right child. The tree supports traversal methods such as PreOrder, InOrder, and PostOrder.
+### Algorithm
+- Utilize two stacks: one for regular elements and another for minimum values.
+- Ensure operations like Push, Pop, and GetMin maintain constant time complexity.
 
-### Binary Search Tree (BST)
-
-A Binary Search Tree (BST) is a type of Binary Tree where the nodes are organized in a manner such that:
-- The left subtree of a node contains only nodes with values less than the node’s value.
-- The right subtree of a node contains only nodes with values greater than the node’s value.
-- Both the left and right subtrees are also binary search trees.
-
-The BST supports operations like adding a node, checking if a node exists, and removing a node while maintaining the BST properties.
-
-## Input and Output Examples
-
-### Example 1: Binary Search Tree Operations
+### Real Code
+Here's the C# implementation of the MinStack class:
 
 ```csharp
-BinarySearchTree bst = new BinarySearchTree();
+// Insert your MinStack.cs code here
 
-// Adding nodes to the BST
-bst.Add(10);
-bst.Add(5);
-bst.Add(15);
-bst.Add(7);
+### Big O Time/Space Complexity
+```
+Push: O(1)
+Pop: O(1)
+Top: O(1)
+GetMin: O(1)
+```
+# Mirror Tree Challenge
+### Problem Domain
+Convert a binary tree into its mirror tree, where all left and right children are swapped.
 
-// Check if a node exists
-bool contains7 = bst.Contains(7); // Output: true
+### Inputs and Expected Outputs
+Inputs: A binary tree.
+Outputs: The mirrored binary tree.
+Edge Cases
+Single-node tree.
+Empty tree.
+Visual
 
-// Remove a node
-bst.Remove(5);
+### Algorithm
+MirrorTree(): Traverse the binary tree recursively and swap the left and right subtrees.
+InorderTraversal(): Perform an inorder traversal to return a list of nodes in the sequence.
 
-// Check if the node is removed
-bool contains5 = bst.Contains(5); // Output: false
+### Big O Time/Space Complexity
+Mirror: O(n) where n is the number of nodes in the tree.
+InorderTraversal: O(n) where n is the number of nodes in the tree.
+
+# Second-Max-Value
+### Expected Console Output
 ```
-### Edge Cases Considered
-Empty Tree: Handle cases where the tree is empty, and operations like traversal or removal are attempted.
-Duplicate Values: Ensure that duplicate values are not added to the BST.
-Removing Non-Existent Node: Handle attempts to remove a node that doesn't exist in the tree.
-Single Node Tree: Operations on a tree with only one node, especially removal.
-Visual Diagram of the Tree
-Here’s a visual representation of the Binary Search Tree after adding the nodes 10, 5, 15, 7:
+InOrder Traversal:
+3 5 7 10 15 20 25
+
+Second Maximum Value: 20
 ```
-        10
-       /  \
-      5    15
-       \
-        7
+### Problem Domain
+Find the second maximum value in a binary tree. The second maximum value is the largest value that is less than the maximum value in the tree.
+
+### Inputs and Expected Outputs
+Input: A binary tree with nodes containing integer values.
+Output: The second maximum value in the binary tree.
+
+### Example:
 ```
-After removing the node 5, the tree looks like this:
+    10
+   /  \
+  5    20
+ / \   / \
+3   7 15  25
 ```
-        10
-       /  \
-      7    15
+#### Output: 20
+### Edge Cases
+An empty tree (should throw an exception).
+A tree with only one node (should throw an exception).
+A tree with fewer than two unique values (should throw an exception).
+
+### Visual:
 ```
-### The Algorithm Used
-Adding a Node in BST
+      10
+     /  \
+    5    20
+   / \   / \
+  3   7 15  25
+```
+In-Order Traversal: 3, 5, 7, 10, 15, 20, 25
+Maximum Value: 25
+Second Maximum Value: 20
+### Algorithm
 Start at the root.
-If the new value is less than the current node’s value, move to the left child.
-If the new value is greater than the current node’s value, move to the right child.
-If the correct position is found (i.e., null), insert the new node.
-### Removing a Node in BST
-If the node to be removed has no children, simply remove it.
-If the node has one child, remove it and replace it with its child.
-If the node has two children, find the smallest node in the right subtree, replace the current node with it, and remove the smallest node.
-### Traversal Methods
-PreOrder: Visit Root, Left, Right.
-InOrder: Visit Left, Root, Right.
-PostOrder: Visit Left, Right, Root.
-
-### Big O Analysis
-Time Complexity
-Add Node: O(log n) in the best case for a balanced tree, O(n) in the worst case for a skewed tree.
-Contains Node: O(log n) in the best case for a balanced tree, O(n) in the worst case for a skewed tree.
-Remove Node: O(log n) in the best case for a balanced tree, O(n) in the worst case for a skewed tree.
-Traversal Methods (PreOrder, InOrder, PostOrder): O(n) since each node is visited once.
-### Space Complexity
-Add Node, Contains Node, Remove Node: O(1) for iterative implementations. O(h) for recursive implementations, where h is the height of the tree.
-Traversal Methods: O(n) in the worst case due to recursion stack.
+Traverse the tree to find the maximum value.
+Track the second maximum by considering:
+The parent of the maximum node if it exists.
+The largest value in the left subtree of the maximum node.
+Handle edge cases.
+Return the second maximum value.
+### Big O Time/Space Complexity
+Time Complexity: O(h) where h is the height of the tree. The traversal to find the maximum and second maximum value is proportional to the height.
+Space Complexity: O(1) as we only use a fixed amount of space for the parent and current nodes.
