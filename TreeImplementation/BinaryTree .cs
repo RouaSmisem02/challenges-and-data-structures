@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TreeImplementation
+﻿namespace TreeImplementation
 {
     public class BinaryTree
     {
@@ -11,8 +9,7 @@ namespace TreeImplementation
             Root = null;
         }
 
-        // Existing methods...
-
+        // Method to mirror the tree
         public void MirrorTree(Node node)
         {
             if (node == null) return;
@@ -27,7 +24,13 @@ namespace TreeImplementation
             MirrorTree(node.Right);
         }
 
-        // Add a method to call MirrorTree from the root
+        // Public method to call MirrorTree from the root
+        public void Mirror()
+        {
+            MirrorTree(Root);
+        }
+
+        // InOrder traversal to print nodes
         public void InOrder(Node node)
         {
             if (node == null) return;
@@ -37,6 +40,7 @@ namespace TreeImplementation
             InOrder(node.Right);
         }
 
+        // Print tree structure
         public void Print(Node node, string indent = "", bool last = true)
         {
             if (node != null)
@@ -60,9 +64,43 @@ namespace TreeImplementation
             }
         }
 
-        public void Mirror()
+        public int FindSecondMax()
         {
-            MirrorTree(Root);
+            if (Root == null)
+            {
+                throw new InvalidOperationException("The tree is empty.");
+            }
+
+            Node parent = null;
+            Node current = Root;
+
+            // Find the maximum node
+            while (current.Right != null)
+            {
+                parent = current;
+                current = current.Right;
+            }
+
+            // Case 1: The maximum node has a left subtree
+            if (current.Left != null)
+            {
+                Node temp = current.Left;
+                while (temp.Right != null)
+                {
+                    temp = temp.Right;
+                }
+                return temp.Data;
+            }
+
+            // Case 2: The maximum node has no left subtree
+            if (parent != null)
+            {
+                return parent.Data;
+            }
+
+            // If there is no second maximum (tree has one node)
+            throw new InvalidOperationException("The tree does not have a second maximum value.");
         }
+
     }
 }
