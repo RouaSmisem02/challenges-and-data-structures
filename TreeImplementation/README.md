@@ -99,3 +99,59 @@ Return the second maximum value.
 ### Big O Time/Space Complexity
 Time Complexity: O(h) where h is the height of the tree. The traversal to find the maximum and second maximum value is proportional to the height.
 Space Complexity: O(1) as we only use a fixed amount of space for the parent and current nodes.
+--------------------------
+### Problem Domain
+We want to calculate the sum of all the leaf nodes in a binary search tree. A leaf node is a node that does not have any children (i.e., both its left and right pointers are null).
+
+### Inputs and Expected Outputs
+Input: A binary search tree (BST) with nodes containing integer values.
+Output: An integer representing the sum of all leaf node values in the BST.
+### Example:
+Given the following BST:
+```
+       9
+     /    \
+    8      12
+   /  \   /   \
+  3    7 17    23
+   \
+    4
+```
+Leaf Nodes: 4, 7, 17, 23
+Expected Output: 4 + 7 + 17 + 23 = 51
+### Edge Cases
+Empty Tree: If the BST is empty (Root is null), the sum of leaf nodes should be 0.
+Single Node Tree: If the BST has only one node (the root itself), and it's a leaf, the sum should be the value of the root node.
+All Nodes Are Leafs: If all nodes in the BST are leaf nodes, the sum should be the sum of all node values.
+No Leaf Nodes: This scenario is impossible in a valid tree structure, as any valid tree must have at least one leaf.
+### Visual Representation
+
+```
+       9
+     /    \
+    8      12
+   /  \   /   \
+  3    7 17    23
+   \
+    4
+```
+Leaf Nodes: 4, 7, 17, 23
+Sum of Leaf Nodes: 4 + 7 + 17 + 23 = 51
+### Algorithm
+Base Case: If the node is null, return 0.
+Check Leaf Node: If the node has no left and right children, it is a leaf node, return its value.
+Recursive Case: Recursively calculate the sum of leaf nodes for both left and right children.
+Return the Sum: Return the sum of the values from the left and right subtree recursions.
+
+## Big O Time and Space Complexity
+### Time Complexity
+The time complexity of the SumOfLeafNodes method is O(n), where n is the number of nodes in the binary search tree (BST).
+
+Reasoning: The SumOfLeafNodes method traverses each node in the binary tree exactly once. For each node, it checks if the node is a leaf or not and then recursively calls the function on the left and right children. This results in a linear time complexity, O(n), since every node in the tree is visited once.
+Space Complexity
+The space complexity of the SumOfLeafNodes method is O(h), where h is the height of the binary search tree (BST).
+
+Reasoning: The space complexity is determined by the maximum depth of the recursion stack, which corresponds to the height of the tree. In the worst-case scenario (if the tree is unbalanced and resembles a linked list), the height of the tree could be n, leading to O(n) space complexity. However, in a balanced binary search tree, the height is O(log n), so the space complexity would be O(log n) in this case.
+### Summary
+Time Complexity: O(n)
+Space Complexity: O(h), where h is the height of the tree. In the worst case (unbalanced tree), O(n); in the best case (balanced tree), O(log n).
