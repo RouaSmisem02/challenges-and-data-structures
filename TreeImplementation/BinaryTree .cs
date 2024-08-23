@@ -64,6 +64,7 @@
             }
         }
 
+        // Method to find the second maximum value in the binary tree
         public int FindSecondMax()
         {
             if (Root == null)
@@ -102,5 +103,27 @@
             throw new InvalidOperationException("The tree does not have a second maximum value.");
         }
 
+        // Method to sum all leaf nodes in the binary tree
+        public int SumOfLeafNodes()
+        {
+            return SumOfLeafNodes(Root);
+        }
+
+        // Helper method to calculate the sum of leaf nodes recursively
+        private int SumOfLeafNodes(Node node)
+        {
+            if (node == null)
+                return 0;
+
+            // Check if it is a leaf node
+            if (node.Left == null && node.Right == null)
+                return node.Data;
+
+            // Recursive call for left and right children
+            int leftSum = SumOfLeafNodes(node.Left);
+            int rightSum = SumOfLeafNodes(node.Right);
+
+            return leftSum + rightSum;
+        }
     }
 }
