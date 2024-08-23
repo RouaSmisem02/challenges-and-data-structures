@@ -1,4 +1,4 @@
-﻿using TreeImplementation;
+﻿using System;
 
 namespace TreeImplementation
 {
@@ -21,6 +21,7 @@ namespace TreeImplementation
             Console.WriteLine();
 
             // Print the original tree structure
+            Console.WriteLine("Original Tree Structure:");
             bst.Print(bst.Root);
             Console.WriteLine();
 
@@ -33,10 +34,14 @@ namespace TreeImplementation
             Console.WriteLine();
 
             // Print the mirrored tree structure
+            Console.WriteLine("Mirrored Tree Structure:");
             bst.Print(bst.Root);
+            Console.WriteLine();
 
+            // Create a new binary search tree for second maximum value
             BinarySearchTree bstree = new BinarySearchTree();
 
+            // Adding nodes to the BST
             bstree.Add(10);
             bstree.Add(5);
             bstree.Add(20);
@@ -44,15 +49,21 @@ namespace TreeImplementation
             bstree.Add(7);
             bstree.Add(15);
             bstree.Add(25);
+            Console.WriteLine();
 
+
+            // Display the in-order traversal
             Console.WriteLine("InOrder Traversal:");
             bstree.InOrder(bstree.Root);
             Console.WriteLine();
 
+            // Find and display the second maximum value
             int secondMax = bstree.FindSecondMax();
             Console.WriteLine($"Second Maximum Value: {secondMax}");
+            Console.WriteLine();
+            // Calculate and display the sum of leaf nodes
+            int sumOfLeaves = bstree.SumOfLeafNodes();
+            Console.WriteLine($"Sum of Leaf Nodes: {sumOfLeaves}");
         }
-
-
     }
 }
