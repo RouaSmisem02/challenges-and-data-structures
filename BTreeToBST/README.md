@@ -1,7 +1,3 @@
-Here's a detailed README.md file for the "Binary Tree to Binary Search Tree" challenge:
-
----
-
 # Binary Tree to Binary Search Tree
 
 ## Problem Domain
